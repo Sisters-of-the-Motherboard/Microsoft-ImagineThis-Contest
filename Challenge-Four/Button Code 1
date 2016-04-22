@@ -1,0 +1,19 @@
+const int buttonPin = D1;     
+int AM = 0;        
+
+void setup() {
+
+  pinMode(buttonPin, INPUT);
+}
+
+void loop() {
+ 
+  AM = digitalRead(buttonPin);
+
+
+  if (AM == HIGH) {
+  Particle.publish("Alexandra has clocked IN");
+  delay(1000);
+  } 
+ 
+}
