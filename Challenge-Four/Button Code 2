@@ -1,0 +1,34 @@
+const int AMIn = D1;    
+const int AMOut = D2;
+const int AWorking = D3;
+int In = 0;   
+int Out = 0;
+
+void setup() {
+
+  pinMode(AMIn, INPUT);
+  pinMode(AMOut, INPUT);
+  pinMode(AWorking, OUTPUT);
+}
+
+void loop() {
+ 
+  In = digitalRead(AMIn);
+  Out = digitalRead(AMOut);
+
+
+  if (In == HIGH && Out == LOW) {
+  Particle.publish("Alexandra has clocked IN");
+  delay(1000);
+  digitalWrite(AWorking, HIGH);
+  } 
+  else if(Out==HIGH && In == LOW){
+      Particle.publish("Alexandra has clocked OUT");
+      delay(1000);
+      digitalWrite(AWorking, LOW);
+  } 
+  else if(Out == LOW && In == LOW){
+      
+  }
+ 
+}
