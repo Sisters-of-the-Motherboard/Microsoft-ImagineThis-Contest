@@ -1,0 +1,143 @@
+
+int One = D0;
+int Two = D1;
+int Three = D2;
+int Four = D3;
+int Five = D4;
+int Six = D5;
+int Seven = D6;
+int Eight = D7;
+int Nine = A0;
+int Ten = A1;
+int ABC = A2;
+int DEF = A3;
+int GHI = A4;
+int r = random(2000);
+
+void setup() {
+    pinMode(One , OUTPUT);
+     pinMode(Two , OUTPUT);
+    pinMode(Three , OUTPUT);
+    pinMode(Four , OUTPUT);
+    pinMode(Five , OUTPUT);
+    pinMode(Six , OUTPUT);
+    pinMode(Seven , OUTPUT);
+    pinMode(Eight , OUTPUT);
+    pinMode(Nine , OUTPUT);
+    pinMode(Ten , OUTPUT);
+    pinMode(ABC , OUTPUT);
+    pinMode(DEF , OUTPUT);
+    pinMode(GHI , OUTPUT);
+}
+
+void loop() {
+    digitalWrite(One, HIGH);
+    digitalWrite(Two, HIGH);
+    digitalWrite(Three, HIGH);
+    digitalWrite(Four, HIGH);
+    digitalWrite(Five, HIGH);
+    digitalWrite(Six, HIGH);
+    digitalWrite(Seven, HIGH);
+    digitalWrite(Eight, HIGH);
+    digitalWrite(Nine, HIGH);
+    digitalWrite(Ten, HIGH);
+    digitalWrite(ABC, HIGH);
+    digitalWrite(DEF, HIGH);
+    digitalWrite(GHI, HIGH);
+    
+    delay(1000);
+    
+    digitalWrite(One, LOW);
+    digitalWrite(Two, LOW);
+    digitalWrite(Three, LOW);
+    digitalWrite(Four, LOW);
+    digitalWrite(Five, LOW);
+    digitalWrite(Six, LOW);
+    digitalWrite(Seven, LOW);
+    digitalWrite(Eight, LOW);
+    digitalWrite(Nine, LOW);
+    digitalWrite(Ten, LOW);
+    digitalWrite(ABC, LOW);
+    digitalWrite(DEF, LOW);
+    digitalWrite(GHI, LOW);
+    
+    delay(500);
+    
+    digitalWrite(One, HIGH);
+    digitalWrite(Two, LOW);
+    digitalWrite(Three, LOW);
+    digitalWrite(Four, LOW);
+    digitalWrite(Five, LOW);
+    digitalWrite(Six, LOW);
+    digitalWrite(Seven, LOW);
+    digitalWrite(Eight, LOW);
+    digitalWrite(Nine, LOW);
+    digitalWrite(Ten, LOW);
+    digitalWrite(ABC, LOW);
+    digitalWrite(DEF, LOW);
+    digitalWrite(GHI, LOW);
+    
+    delay(150);
+    
+    digitalWrite(One, LOW);
+    digitalWrite(Two, HIGH);
+    
+    delay(150);
+    
+    digitalWrite(Two, LOW);
+    digitalWrite(Three, HIGH);
+    
+    delay(150);
+    
+
+    digitalWrite(Three, LOW);
+    digitalWrite(Four, HIGH);
+
+    delay(150);
+    
+    digitalWrite(Four, LOW);
+    digitalWrite(Five, HIGH);
+  
+    delay(150);
+    
+    digitalWrite(Five , LOW);
+    digitalWrite(Six , HIGH);
+    
+    delay(150);
+    
+    digitalWrite(Six, LOW);
+    digitalWrite(Seven, HIGH);
+
+    delay(150);
+    
+    digitalWrite(Seven, LOW);
+    digitalWrite(Eight, HIGH);
+
+    delay(150);
+    
+    digitalWrite(Eight, LOW);
+    digitalWrite(Nine, HIGH);
+
+    delay(150);
+    
+    digitalWrite(Nine, LOW);
+    digitalWrite(Ten, HIGH);
+
+    delay(150);
+    
+    digitalWrite(Ten, LOW);
+    digitalWrite(ABC, HIGH);
+
+    delay(150);
+    
+    digitalWrite(ABC, LOW);
+    digitalWrite(DEF, HIGH);
+
+    delay(150);
+    
+    digitalWrite(DEF, LOW);
+    digitalWrite(GHI, HIGH);
+    
+    delay(150);
+    
+}
